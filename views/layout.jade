@@ -13,8 +13,10 @@ html
 
   body
     header
-      img.logo(src='/img/vizcab.png' alt='Vizcab Logo')
+      .wrap
+        img.logo(src='/img/vizcab.png' alt='Vizcab Logo')
     main
-      block content
+      .wrap
+        block content
 
     != js()

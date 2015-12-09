@@ -3,6 +3,8 @@
 normalize-css()
 base()
 
+$padding-left = 100px
+
 *
   box-sizing: border-box
 
@@ -12,23 +14,42 @@ header
 
 body
   background-color: $gray
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px
+  font-weight: 300
 
 .wrap
   max-width: 1325px
   margin: 0 auto
 
 .logo
-  padding-left: 40px
+  padding-left: $padding-left
 
 .landing
   background-color: $white
   group()
 
 .info
-  padding-top: 190px
-  padding-left: 40px
+  padding-top: 160px
+  padding-left: $padding-left
   float: left
   width: 46%
+  font-size: 2.4em
+
+h2
+  font-size: 1.58em
+  font-weight: 300
+  margin: 30px 0
+
+h3
+  font-weight: 300
+  margin: 30px 0
+
+.links
+  reset-list()
+
+  li
+    margin: 40px 0
 
 .headshot
   float: right

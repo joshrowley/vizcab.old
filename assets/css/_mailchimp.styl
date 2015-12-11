@@ -1,0 +1,63 @@
+#mc-embedded-subscribe-form.validate
+  padding: 0
+
+.newsletter-label
+  font-size: 1.14em
+  font-weight: 300
+  padding: 0 0 10px
+  margin: 0
+  font-style: italic
+  font-family: 'Roboto', sans-serif;
+
+.privacy
+  font-size: 0.5em
+  font-weight: 300
+  font-style: italic
+  margin: 10px 0
+
+$form-width = 300px
+
+#mc_embed_signup .mc-field-group input.email
+  max-width: $form-width
+  border-color: $gray
+  height: 45px
+  font-size: 1.14em
+  font-family: 'Roboto', sans-serif;
+  float: left
+  clear: none
+  border-top-left-radius: 2px
+  border-bottom-left-radius: 2px
+  border-top-right-radius: 0
+  border-bottom-right-radius: 0
+
+  &:focus
+    outline: none
+
+.mce_inline_error
+  max-width: $form-width
+
+#mc_embed_signup .button.newsletter-submit
+  width: 45px
+  height: 45px
+  float: left
+  clear: none
+  background-color: $gray
+  border-top-left-radius: 0
+  border-bottom-left-radius: 0
+  border-top-right-radius: 2px
+  border-bottom-right-radius: 2px
+  margin: 0
+
+  hover-darken()
+
+  &:hover
+    transition: all .2s ease-in
+
+
+#mc_embed_signup .mc-field-group.newsletter-fields
+  padding-bottom: 0
+
+#mc_embed_signup div#mce-responses.messages
+  margin: 0
+  float: none
+  padding: 0
